@@ -1,0 +1,30 @@
+<div class="navbar">
+    <div class="logo">
+        <a routerLink="/">
+            <img src="assets/images/logo4.png" alt="">
+        </a>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>
+                Home
+            </li>
+
+            <li (mouseenter)="openmega()" (mouseleave)="closemega()">
+                <a>Products</a>
+                <div class="drop-down" *ngIf="showmega">
+                    <app-products></app-products>
+                </div>
+            </li>
+
+            <li>
+                <a> About Us</a>
+            </li>
+
+            <li>
+                <a> Services</a>
+            </li>
+        </ul>
+    </div>
+</div>

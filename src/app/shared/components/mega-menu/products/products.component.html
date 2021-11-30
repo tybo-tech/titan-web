@@ -1,0 +1,34 @@
+<div class="main-mega">
+    <div class="row">
+        <div class="product"  *ngFor="let data of products">
+          <span (mouseenter)="opechild('fini')">
+              <h4>
+                  {{data.name}}
+               </h4>
+          </span>
+          
+        </div>
+    </div>
+
+    <div class="row row2">
+        <p *ngIf="vavles">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt libero, quo, alias consequatur at accusamus
+
+        </p>
+
+        <p *ngIf="filter">
+            Filter! distinctio voluptatem ipsam pariatur dolorem, optio autem? Eligendi, nostrum nisi necessitatibus
+            ipsum
+            tempora molestias perferendis?
+        </p>
+
+        <p *ngIf="fini">
+            <b>Fini!</b> distinctio voluptatem ipsam pariatur dolorem, optio autem? Eligendi, nostrum nisi
+            necessitatibus ipsum
+            tempora molestias perferendis?
+        </p>
+    </div>
+    <div class="row">
+      
+    </div>
+</div>

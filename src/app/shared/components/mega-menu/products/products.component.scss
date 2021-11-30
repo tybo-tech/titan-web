@@ -1,0 +1,30 @@
+.main-mega {
+  width: 100%;
+  height: 60vh;
+  background: #fff;
+  // position: absolute;
+  // left: 20%;
+
+  -webkit-box-shadow: 10px 10px 29px 0px rgba(196, 196, 196, 1);
+  -moz-box-shadow: 10px 10px 29px 0px rgba(196, 196, 196, 1);
+  box-shadow: 10px 10px 29px 0px rgba(196, 196, 196, 1);
+
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  .product {
+    padding: 1rem;
+    color: #34495e;
+
+    &:hover{
+        background: #171D23;
+        color: #fff;
+    }
+  }
+  .row2 {
+    background: #ecf0f1;
+
+    p {
+      padding: 2rem 0.2rem;
+    }
+  }
+}
